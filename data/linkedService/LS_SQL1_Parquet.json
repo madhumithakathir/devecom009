@@ -1,0 +1,12 @@
+{
+	"name": "LS_SQL1_Parquet",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlssidsalesdev.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDcxOEQyNThDLTU5MjEtNDcyMS1BRkY5LTMzQ0NCOUNDRDFCQV80NmM1NWM1ZC05Y2U2LTQyMTAtOGM4Mi01ZTg2MDcwY2U5ZTMiDQp9"
+		}
+	}
+}
