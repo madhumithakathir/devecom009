@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ecomsalesadf"
+		},
+		"LS_SqlServerTable_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-S4AIAT2\\SQLEXPRESS;Initial Catalog=salesecom"
+		},
+		"LS_SqlServerTable_password": {
+			"value": ""
+		},
+		"LS_SQL_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_SqlServerTable_properties_typeProperties_userName": {
+			"value": "DESKTOP-S4AIAT2\\Madhu"
+		},
+		"LS_SQL_Parquet_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
