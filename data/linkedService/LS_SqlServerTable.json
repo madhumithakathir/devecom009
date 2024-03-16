@@ -6,8 +6,8 @@
 		"type": "SqlServer",
 		"typeProperties": {
 			"connectionString": "integrated security=True;data source=DESKTOP-S4AIAT2\\SQLEXPRESS;initial catalog=salesecom",
-			"userName": "DESKTOP-S4AIAT2",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4MWYxNGJhOS1iZjQ0LTRhOWUtOTNjNi1kNjVlM2Y3NjUyYjAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"userName": "DESKTOP-S4AIAT2\\Madhu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwODYxMGQwOS1jYzk1LTRkZDktYTczMi03M2NmY2VlODIwNWMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
