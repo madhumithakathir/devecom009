@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_SQL_Parquet",
+						"referenceName": "DS_SQL1_Parquet",
 						"type": "DatasetReference"
 					}
 				]
