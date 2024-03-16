@@ -1,0 +1,24 @@
+{
+	"name": "EVNT_BLOB",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_BLOB_PAR",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/product/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/b6ac78fc-41d8-48bf-bc47-d076d72f335a/resourceGroups/ecomsalesdev/providers/Microsoft.Storage/storageAccounts/blobecomsalesdev",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
