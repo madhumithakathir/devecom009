@@ -1,0 +1,24 @@
+{
+	"name": "SCH_RESTAPI",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_RESTAPI_PAR",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-03-16T10:19:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
