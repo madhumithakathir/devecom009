@@ -5,20 +5,71 @@
 		"factoryName": {
 			"value": "ecomsalesadf"
 		},
+		"LS_ADLS_PAR_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_BLOB_PAR_accountKey": {
+			"value": ""
+		},
+		"LS_Blob_Parquet_connectionString": {
+			"value": ""
+		},
+		"LS_RestAPI_Parquet_Output_accountKey": {
+			"value": ""
+		},
+		"LS_SQL1_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_Parquet_accountKey": {
+			"value": ""
+		},
 		"LS_SqlServerTable_connectionString": {
 			"value": "Integrated Security=True;Data Source=DESKTOP-S4AIAT2\\SQLEXPRESS;Initial Catalog=salesecom"
 		},
 		"LS_SqlServerTable_password": {
 			"value": ""
 		},
-		"LS_SQL_Parquet_accountKey": {
+		"LS_SqlServerTable2_connectionString": {
+			"value": "Integrated Security=True;Data Source=DESKTOP-S4AIAT2\\SQLEXPRESS;Initial Catalog=salesecom"
+		},
+		"LS_SqlServerTable2_password": {
 			"value": ""
+		},
+		"LS_ADLS_PAR_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_ADLS_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsecomdev.dfs.core.windows.net/"
+		},
+		"LS_BLOB_PAR_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_RestAPI_Parquet_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/wC5Xvf/data"
+		},
+		"LS_RestAPI_Parquet_Output_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_SQL1_Parquet_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_SQL_Parquet_properties_typeProperties_url": {
+			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
 		},
 		"LS_SqlServerTable_properties_typeProperties_userName": {
 			"value": "DESKTOP-S4AIAT2\\Madhu"
 		},
-		"LS_SQL_Parquet_properties_typeProperties_url": {
-			"value": "https://adlssidsalesdev.dfs.core.windows.net/"
+		"LS_SqlServerTable2_properties_typeProperties_userName": {
+			"value": "DESKTOP-S4AIAT2\\Madhu"
+		},
+		"EVNT_ADLS_properties_typeProperties_scope": {
+			"value": "/subscriptions/b6ac78fc-41d8-48bf-bc47-d076d72f335a/resourceGroups/ecomsalesdev/providers/Microsoft.Storage/storageAccounts/adlsecomdev"
+		},
+		"EVNT_BLOB_properties_typeProperties_scope": {
+			"value": "/subscriptions/b6ac78fc-41d8-48bf-bc47-d076d72f335a/resourceGroups/ecomsalesdev/providers/Microsoft.Storage/storageAccounts/blobecomsalesdev"
 		}
 	}
 }

@@ -7,6 +7,34 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ecomsalesadf"
 		},
+		"LS_ADLS_PAR_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_PAR'"
+		},
+		"LS_ADLS_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_Parquet'"
+		},
+		"LS_BLOB_PAR_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_BLOB_PAR'"
+		},
+		"LS_Blob_Parquet_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_Blob_Parquet'"
+		},
+		"LS_RestAPI_Parquet_Output_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_RestAPI_Parquet_Output'"
+		},
+		"LS_SQL1_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL1_Parquet'"
+		},
+		"LS_SQL_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_Parquet'"
+		},
 		"LS_SqlServerTable_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_SqlServerTable'",
@@ -16,17 +44,58 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SqlServerTable'"
 		},
-		"LS_SQL_Parquet_accountKey": {
+		"LS_SqlServerTable2_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_SQL_Parquet'"
+			"metadata": "Secure string for 'connectionString' of 'LS_SqlServerTable2'",
+			"defaultValue": "Integrated Security=True;Data Source=DESKTOP-S4AIAT2\\SQLEXPRESS;Initial Catalog=salesecom"
+		},
+		"LS_SqlServerTable2_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SqlServerTable2'"
+		},
+		"LS_ADLS_PAR_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_ADLS_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsecomdev.dfs.core.windows.net/"
+		},
+		"LS_BLOB_PAR_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_RestAPI_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/wC5Xvf/data"
+		},
+		"LS_RestAPI_Parquet_Output_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_SQL1_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
+		},
+		"LS_SQL_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
 		},
 		"LS_SqlServerTable_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "DESKTOP-S4AIAT2\\Madhu"
 		},
-		"LS_SQL_Parquet_properties_typeProperties_url": {
+		"LS_SqlServerTable2_properties_typeProperties_userName": {
 			"type": "string",
-			"defaultValue": "https://adlssidsalesdev.dfs.core.windows.net/"
+			"defaultValue": "DESKTOP-S4AIAT2\\Madhu"
+		},
+		"EVNT_ADLS_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/b6ac78fc-41d8-48bf-bc47-d076d72f335a/resourceGroups/ecomsalesdev/providers/Microsoft.Storage/storageAccounts/adlsecomdev"
+		},
+		"EVNT_BLOB_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/b6ac78fc-41d8-48bf-bc47-d076d72f335a/resourceGroups/ecomsalesdev/providers/Microsoft.Storage/storageAccounts/blobecomsalesdev"
 		},
 		"containerUri": {
 			"type": "string",
@@ -55,6 +124,24 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_ADLS_PAR_accountKey": {
+						"value": "[parameters('LS_ADLS_PAR_accountKey')]"
+					},
+					"LS_ADLS_Parquet_accountKey": {
+						"value": "[parameters('LS_ADLS_Parquet_accountKey')]"
+					},
+					"LS_BLOB_PAR_accountKey": {
+						"value": "[parameters('LS_BLOB_PAR_accountKey')]"
+					},
+					"LS_Blob_Parquet_connectionString": {
+						"value": "[parameters('LS_Blob_Parquet_connectionString')]"
+					},
+					"LS_RestAPI_Parquet_Output_accountKey": {
+						"value": "[parameters('LS_RestAPI_Parquet_Output_accountKey')]"
+					},
+					"LS_SQL1_Parquet_accountKey": {
+						"value": "[parameters('LS_SQL1_Parquet_accountKey')]"
+					},
 					"LS_SQL_Parquet_accountKey": {
 						"value": "[parameters('LS_SQL_Parquet_accountKey')]"
 					},
@@ -64,15 +151,68 @@
 					"LS_SqlServerTable_password": {
 						"value": "[parameters('LS_SqlServerTable_password')]"
 					},
+					"LS_SqlServerTable2_connectionString": {
+						"value": "[parameters('LS_SqlServerTable2_connectionString')]"
+					},
+					"LS_SqlServerTable2_password": {
+						"value": "[parameters('LS_SqlServerTable2_password')]"
+					},
+					"LS_ADLS_PAR_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_PAR_properties_typeProperties_url')]"
+					},
+					"LS_ADLS_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_Parquet_properties_typeProperties_url')]"
+					},
+					"LS_BLOB_PAR_properties_typeProperties_url": {
+						"value": "[parameters('LS_BLOB_PAR_properties_typeProperties_url')]"
+					},
+					"LS_RestAPI_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_RestAPI_Parquet_properties_typeProperties_url')]"
+					},
+					"LS_RestAPI_Parquet_Output_properties_typeProperties_url": {
+						"value": "[parameters('LS_RestAPI_Parquet_Output_properties_typeProperties_url')]"
+					},
+					"LS_SQL1_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL1_Parquet_properties_typeProperties_url')]"
+					},
 					"LS_SQL_Parquet_properties_typeProperties_url": {
 						"value": "[parameters('LS_SQL_Parquet_properties_typeProperties_url')]"
 					},
 					"LS_SqlServerTable_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SqlServerTable_properties_typeProperties_userName')]"
+					},
+					"LS_SqlServerTable2_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SqlServerTable2_properties_typeProperties_userName')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ecomsalesadf_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"EVNT_ADLS_properties_typeProperties_scope": {
+						"value": "[parameters('EVNT_ADLS_properties_typeProperties_scope')]"
+					},
+					"EVNT_BLOB_properties_typeProperties_scope": {
+						"value": "[parameters('EVNT_BLOB_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ecomsalesadf_ArmTemplate_0')]"
+			]
 		}
 	]
 }
